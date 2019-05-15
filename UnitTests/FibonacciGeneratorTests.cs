@@ -17,7 +17,7 @@ namespace UnitTests
         {
             var fibonacci = _fibonacciGenerator.GenerateFibonacci(0);
             
-            Assert.Equal(1, fibonacci);
+            Assert.Equal(1ul, fibonacci);
         }
 
         [Fact]
@@ -25,7 +25,7 @@ namespace UnitTests
         {
             var fibonacci = _fibonacciGenerator.GenerateFibonacci(1);
             
-            Assert.Equal(1, fibonacci);
+            Assert.Equal(1ul, fibonacci);
         }
 
         [Theory]
@@ -39,7 +39,7 @@ namespace UnitTests
         [InlineData(9, 55)]
         [InlineData(10, 89)]
         [InlineData(11, 144)]
-        public void ShouldReturnTheSumOfTheTwoPriorNumberWHenInputN(int inputNumber, int expected)
+        public void ShouldReturnTheSumOfTheTwoPriorNumberWHenInputN(int inputNumber, ulong expected)
         {
             var fibonacci = _fibonacciGenerator.GenerateFibonacci(inputNumber);
             

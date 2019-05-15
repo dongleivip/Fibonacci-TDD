@@ -21,16 +21,16 @@ namespace Fibonacci
 //        }
         
         
-        public long GenerateFibonacci(int number)
+        public ulong GenerateFibonacci(int number)
         {
             if (number == 0 || number == 1)
             {
                 return 1;
             }
             
-            long fibNMinusOne = 1;
-            long fibNMinusTwo = 1;
-            long fibN = 0;
+            ulong fibNMinusOne = 1;
+            ulong fibNMinusTwo = 1;
+            ulong fibN = 0;
 
             for (var i = 2; i <= number; i++)
             {
