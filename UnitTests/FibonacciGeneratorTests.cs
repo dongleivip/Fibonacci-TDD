@@ -31,6 +31,14 @@ namespace UnitTests
         [Theory]
         [InlineData(2, 2)]
         [InlineData(3, 3)]
+        [InlineData(4, 5)]
+        [InlineData(5, 8)]
+        [InlineData(6, 13)]
+        [InlineData(7, 21)]
+        [InlineData(8, 34)]
+        [InlineData(9, 55)]
+        [InlineData(10, 89)]
+        [InlineData(11, 144)]
         public void ShouldReturnTheSumOfTheTwoPriorNumberWHenInputN(int inputNumber, int expected)
         {
             var fibonacci = _fibonacciGenerator.GenerateFibonacci(inputNumber);
